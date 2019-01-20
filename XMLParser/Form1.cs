@@ -1,14 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
@@ -19,6 +13,11 @@ namespace XMLParser
         public Form1()
         {
             InitializeComponent();
+            clearResults();
+        }
+
+        private void clearResults()
+        {
             lblCustomer.Text = String.Empty;
             lblDate.Text = String.Empty;
             lblId.Text = String.Empty;
